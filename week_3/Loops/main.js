@@ -33,7 +33,7 @@ while (distance != 0) {
     console.log(speed);
 }
 
-"Make a program that asks 20 numbers from user. After that the program prints out how many of those numbers where even."
+"4 Make a program that asks 20 numbers from user. After that the program prints out how many of those numbers where even."
 
 let digit, count = 0;
 
@@ -51,47 +51,58 @@ console.log('Numder of even numbers:', count);
 let digit, total =0, count =0, avg =0;
 digit = Number(prompt("Please enter a number not 0"));
 
-if(result == 0){
+if(digit == 0){
     alert("Achtung!");
 }
 else{
     while(digit != 0){
         total = digit + total;
         count++;
-        avg = total / 5;
+        avg = total / count;
         digit = Number(prompt("Please enter a number not 0"));
     }
-    console.log(avg);
 }
+console.log("Your average is:",avg);
 
 
 
 "Make a program that asks 25 numbers form the user. In the end program prints out average of the numbers."
 
-let digit, total =0, avg =0;
-digit = Number(prompt("Please enter a number"));
+let digit =0, total =0, avg =0;
 for (i =0; i<5; i++) {
     total = digit + total;
     avg = total / i;
     digit = Number(prompt("Please enter a number"));
 }
+console.log(total);
+console.log (i);
 console.log(avg);
 
 "Make a program that ask first one number from the user. After that the program asks: ”Do you want to continue giving numbers?(y/n)”. If user answers y, the program continues to ask another number. If user answers n, program ends. In the end program prints out average of the numbers."
 
-let digit, total =0, avg =0, count =0;
-digit = Number(prompt("Please enter a number"));
+let digit, question, total =0, avg =0, count =0;
 do {
+    digit = Number(prompt("Please enter a number"));
     total = digit + total;
     count++;
     avg = total / count;
-    digit = Number(prompt("Please enter a number"));
-    question = (prompt("Do you want to continue giving numbers?(y/n)"))
+    question = (prompt("Do you want to continue giving numbers?(y=1/n=2)"));
 }
-while(question = 1)
+while(question == 1)
 
-if (question = 2) {
+if (question == 2) {
     console.log(avg);
 }
+else (alert("1 or 2"))
 
 "Make a program that asks first how many numbers user wants to give to the program. After that program asks those numbers. In the end program prints out the smallest number that user gave."
+let i, j, digit = 0, compare =99;
+i = Number(prompt("Please enter a number of numbers"));
+for (j=1; j<=i; j++) {
+    digit = Number(prompt("Please enter a number"));
+    if (digit < compare){
+        compare = digit;
+    }
+    else (console.log(compare));
+}
+console.log(digit);  
