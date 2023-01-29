@@ -103,8 +103,8 @@ for (j=1; j<=i; j++) {
     if (digit < compare){
         compare = digit;
     }
-    else (console.log(compare));
 }
+console.log(compare)
 
 
 "9. Make a program that asks ten numbers and in the end prints out two biggest numbers."
@@ -125,9 +125,9 @@ console.log("1st number", first, "2nd number", second)
 "10. Make a program that asks ten numbers. Program calculates and prints out sum and average, also prints out the smallest and biggest number."
 
 
-let biggest =0, smallest=0, total, count, avg;
+let biggest =-99, smallest =99, total =0, count, avg;
 
-for (i=0;i<5;i++){
+for (let i=1;i<=5;i++){
     digit = Number(prompt("Please enter a number"));
     if(digit > biggest){
         biggest = digit;
@@ -136,7 +136,8 @@ for (i=0;i<5;i++){
         smallest = digit;
     }
     total = digit + total;
-    count++;
-    avg = total / count;
+    avg = total / i;
 }
-console.log()
+console.log('biggest is',biggest);
+console.log('smallest is', smallest);
+console.log('avg', avg);
