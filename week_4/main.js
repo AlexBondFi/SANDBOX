@@ -43,7 +43,7 @@ const convertor = (id, value) => {
     }
     if (id === "kelvin") {
         fah.value = (val - 273.15).toFixed(2);
-        cel.value = ((val - 273,15) * 1.8).toFixed(2);
+        cel.value = ((val - 273.15) * 1.8 + 32).toFixed(2);
 
     }
 };
