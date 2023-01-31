@@ -1,0 +1,32 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+input, button {
+    font-family: inherit;
+    padding: 10px;
+    font-size: 14px;
+
+}
+
+button {
+    border: none;
+    background-color: chocolate;
+    color: white;
+    margin: 10px 0px;
+    border-radius: 5px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+}
+input {
+    display: inline-§;
+    width: 100px;
+}
+
+.insert {
+    margin: 10px 0px;
+}
