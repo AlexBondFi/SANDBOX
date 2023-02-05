@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: aqua;
+}
+header {
+    background-color: brown;
+    color: azure;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    color: bisque;
+}
+
+#hero_banner {
+    height: 75vh;
+    background: url('https://images.pexels.com/photos/1183434/pexels-photo-1183434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2 {
+    color: rgb(247, 85, 85);
+    font-size: 5rem;
+}
+#left {
+    background-color: orange;
+    width: 25vw;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#right {
+    background-color: darkmagenta;
+    width: 75vw;
+    display: flex;
+    flex-wrap: wrap;  
+    /* flex-wrap: wrap;  - make box go to next lvl, not making it narrow  */
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: deeppink;
+    color: blue;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container {
+    display: flex;
+}
+
+@media (max-width: 922px) {
+    h2 {
+        font-size: 3rem;
+    }
+    #left,
+    #right {
+        width: 100vw;
+    }
+    #left {
+        flex-direction: row;
+    }
+    .container {
+        flex-direction: column;
+    }
+}

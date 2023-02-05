@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza</title>
+  </head>
+  <body>
+    <header>PIZZA PIZZA PIZZA</header>
+    <form>
+      <div class="container">
+        <aside id="total">
+          <h2 id="total">Total:</h2>
+          <p>oninput="convertor(this.id, this.value)"</p>
+          <p>Customer NAME</p>
+          <p id="answer"></p>
+        </aside>
+        <h2>Customer information</h2>
+        <section id="names">
+          <label for="name">Customers name:</label>
+          <input type="text" id="name" />
+        </section>
+        <h2>Pizzas</h2>
+        <section id="pizzas">
+          <form>
+            <ul>
+              <li>
+                <input
+                  type="radio"
+                  id="size2"
+                  name="sizes"
+                  class="sizes"
+                  data-cost="7.5"
+                />
+                <label for="size2">Pizza for 2:</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  id="size4"
+                  name="sizes"
+                  class="sizes"
+                  data-cost="10.5"
+                />
+                <label for="size4">Pizza for 4:</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  id="size6"
+                  name="sizes"
+                  class="sizes"
+                  data-cost="12.5"
+                />
+                <label for="size6">Pizza for 6:</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  id="size8"
+                  name="sizes"
+                  class="sizes"
+                  data-cost="15.5"
+                />
+                <label for="size8">Pizza for 8:</label>
+              </li>
+            </ul>
+          </form>
+        </section>
+        <h2>Toppings</h2>
+        <section id="toppings">
+          <form>
+            <ul>
+              <li>
+                <input type="checkbox" id="cheese" class="addings" />
+                <label for="cheese">Cheese:</label>
+              </li>
+              <li>
+                <input type="checkbox" id="olives" class="addings" />
+                <label for="olives">Olives:</label>
+              </li>
+              <li>
+                <input type="checkbox" id="chicken" class="addings" />
+                <label for="chicken">Chicken:</label>
+              </li>
+              <li>
+                <input type="checkbox" id="ham" class="addings" />
+                <label for="ham">Ham:</label>
+              </li>
+              <li>
+                <input type="checkbox" id="paprica" class="addings" />
+                <label for="paprica">Paprica:</label>
+              </li>
+              <li>
+                <input type="checkbox" id="111" class="addings" />
+                <label for="111">Cheese:</label>
+              </li>
+              <li>
+                <input type="checkbox" id="222" class="addings" />
+                <label for="222">Olives:</label>
+              </li>
+              <li>
+                <input type="checkbox" id="333" class="addings" />
+                <label for="333">Chicken:</label>
+              </li>
+              <li>
+                <input type="checkbox" id="444" class="addings" />
+                <label for="444">Ham:</label>
+              </li>
+              <li>
+                <input type="checkbox" id="555" class="addings" />
+                <label for="555">Paprica:</label>
+              </li>
+            </ul>
+          </form>
+        </section>
+        <h2>Delivery method</h2>
+        <section id="delivery">
+          <select id="deliveryLines">
+            <option value="home">Home delivery (+5€)</option>
+            <option value="inside">Eat in</option>
+            <option value="pickup">Pickup</option>
+          </select>
+        </section>
+      </div>
+    </form>
+    <script src="main.js"></script>
+  </body>
+</html>

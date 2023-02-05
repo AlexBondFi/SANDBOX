@@ -48,12 +48,6 @@ const convertor = (id, value) => {
     }
 };
 
-   
-
-    
-    
-
-
 
 // const paragraphs = document.querySelectorAll('p');
 // const inputs = document.querySelectorAll('input');

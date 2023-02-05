@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* .container {
+    display: block;
+    width: 700px;
+    background-color: rgb(241, 147, 147);
+    border-radius: 5px;
+    border: 2px solid rgb(40, 0, 0);
+    margin: 10px;
+} */
+
+h2{
+    padding: 2rem;
+}
+
+#names {
+    display: flex;
+    width: 350px;
+    flex-flow: wrap;
+    padding: 2rem;
+}
+#pizzas {
+    display: flex;
+    padding: 2rem;
+    justify-content: left;
+    flex-flow: column;
+    
+    
+}
+#toppings {
+    display: flex;
+    padding: 2rem;
+}
+
+#delivery {
+    display: flex;
+    padding: 2rem;
+
+}
+ul{
+    list-style-type: none;
+}
+
+
+aside {
+    float: right;
+    border-color: black;
+    border-style: solid;
+
+}
