@@ -5,6 +5,9 @@ const endButton = document.querySelector('#end');
 const scoreSpan = document.querySelector('.score');
 const scoreEnd = document.querySelector('.scoreEnd');
 const overlay = document.querySelector('.overlay');
+const startAudio = document.querySelector('#startAudio');
+const endAudio = document.querySelector('#endAudio')
+const clickAudio = document.querySelector('#clickAudio')
 
 
 let score =0;
@@ -14,12 +17,21 @@ let pace = 2000
 let rounds = 0
 
 
+const startMusic = () =>{
+    startAudio.play()
+}
 
+const clickMusic = () =>{
+    clickAudio.play()
+}
 
 
 
 circles.forEach((circle, i) => {
-    circle.addEventListener('click', () => clickCircle(i))
+    circle.addEventListener('click', () => {
+        clickCircle(i)
+        clickAudio.play()
+    })
 
 }
 )
@@ -31,7 +43,7 @@ const clickCircle = (i) => {
         return endGame()
     }
     console.log('circle index: ', i)
-    score+=10
+    score+=1
     rounds = 0
     scoreSpan.textContent = score
 }
@@ -43,7 +55,7 @@ const enableCircles = () =>{
 }
 
 const startGame = () =>{
-    console.log('game started')
+
     if(rounds >=3){
         return endGame()
     }
@@ -68,6 +80,7 @@ const startGame = () =>{
 }
 
 const endGame = () =>{
+    endAudio.play()
     scoreEnd.textContent = score
     overlay.style.visibility = 'visible'
     endButton.classList.remove('hidden')
@@ -83,6 +96,7 @@ const resetGame = () => {
 }
 
 
+startButton.addEventListener('click', startMusic)
 startButton.addEventListener('click', startGame)
 endButton.addEventListener('click', endGame)
 closeButton.addEventListener('click', resetGame)
