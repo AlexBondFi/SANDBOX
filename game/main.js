@@ -32,6 +32,7 @@ const clickCircle = (i) => {
     }
     console.log('circle index: ', i)
     score+=10
+    rounds = 0
     scoreSpan.textContent = score
 }
 
