@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, red, black);
+}
+
+form {
+    background-color: white;
+    color: black;
+    width: 400px;
+    height: 100vh;
+    padding: 2rem;
+}
+
+h1{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+h2{
+    margin: 3rem 0 1rem;
+    text-align: center;
+}
+
+input[type='color']{
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    width: 45%;
+    height: 50px;
+}
+
+input[type='radio'] {
+    display: none;
+}
+
+label{
+    margin: 0.5rem;
+    background-color: darkred;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: white;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type='radio']:checked + label {
+    background-color: crimson ;
+    color: black;
+}
+
+.direction_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}

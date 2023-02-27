@@ -10,6 +10,9 @@ const countpizzas = (event) => {
 pizzastotal.forEach(pizzastotal => {
     pizzastotal.addEventListener('click', countpizzas);
 })
+const text = countpizzas(target.dataset.cost);
+
+console.log(`${text}`)
 
 answer.textContent = event;
 // countpizzasData ???
