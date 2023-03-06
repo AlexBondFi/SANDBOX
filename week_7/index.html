@@ -9,64 +9,65 @@
   </head>
   <body>
     <div>
-    <div>
-        <h2>Search car by licence number</h2>
-        <label for="licenceNumber" >Licence number</label>
-        <input type="text" id="licenceNumber">
-        <button type="submit" id="searchBtn">Search</button>
-        <p><span id="searchResult"></span></p>
-    </div>
-    <form>
-      <h2>Insert car data</h2>
       <div>
-      <label for="license">License number</label>
-      <input type="text" id="license" required />
+        <h2>Search car by licence number</h2>
+        <label for="licenseNumber">Licence number</label>
+        <input type="text" id="licenseNumber" />
+        <button type="submit" id="searchBtn">Search</button>
+        <button type="submit" id="searchBtn2">Search2</button>
+        <p><span id="searchResult"></span></p>
+      </div>
+      <form>
+        <h2>Insert car data</h2>
+        <div>
+          <label for="license">License number</label>
+          <input type="text" id="license" required />
+        </div>
+        <div>
+          <label for="maker">Car maker</label>
+          <input type="text" id="maker" required />
+        </div>
+        <div>
+          <label for="model">Car model</label>
+          <input type="text" id="model" required />
+        </div>
+        <div>
+          <label for="owner">Car owner</label>
+          <input type="text" id="owner" required />
+        </div>
+        <div>
+          <label for="price">Car price</label>
+          <input type="text" id="price" required />
+        </div>
+        <div>
+          <label for="color">Car color</label>
+          <input type="text" id="color" required />
+        </div>
+        <div>
+          <button class="inputBTN" id="addCar">Add car</button>
+          <button class="inputBTN">Reset</button>
+        </div>
+      </form>
     </div>
     <div>
-    <label for="maker">Car maker</label>
-      <input type="text" id="maker" required />
-    </div>
-    <div>
-      <label for="model">Car model</label>
-      <input type="text" id="model" required />
-    </div>
-    <div>
-      <label for="owner">Car owner</label>
-      <input type="text" id="owner" required />
-    </div>
-    <div>
-      <label for="price">Car price</label>
-      <input type="text" id="price" required />
-    </div>
-    <div>
-      <label for="color">Car color</label>
-      <input type="text" id="color" required />
-    </div>
-    <div>
-      <button class="inputBTN" id="addCar">Add car</button>
-      <button class="inputBTN">Reset</button></div>
-    </div>
-    </form>
-    </div>
-    <div>
-    <div>
+      <div>
         <h2>Cars database</h2>
-    </div>
-    <div>
+      </div>
+      <div>
         <table>
-            <thead>
+          <thead>
             <tr>
-                <th>License</th>
-                <th>Maker</th>
-                <th>Model</th>
-                <th>Owner</th>
-                <th>Price</th>
-                <th>Color</th>
+              <th>License</th>
+              <th>Maker</th>
+              <th>Model</th>
+              <th>Owner</th>
+              <th>Price</th>
+              <th>Color</th>
             </tr>
-            </thead>
-            <tbody id="result"></tbody>
+          </thead>
+          <tbody id="result"></tbody>
         </table>
-    </div>
+      </div>
     </div>
     <script src="main.js"></script>
   </body>

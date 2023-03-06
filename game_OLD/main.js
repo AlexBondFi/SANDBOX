@@ -13,7 +13,7 @@ const clickAudio = document.querySelector('#clickAudio')
 let score =0;
 let active =0;
 let timer
-let pace = 2000
+let pace = 1000
 let rounds = 0
 
 
